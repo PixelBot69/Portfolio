@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "roboto";
+}
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
+.slick-dots li button:before {
+  color:white !important;
+}
+.slick-dots li.slick-active button:before {
+  color:red !important;
+}
